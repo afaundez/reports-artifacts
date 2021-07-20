@@ -12,6 +12,10 @@ print(json_object)
 with open(output_path, 'w+') as f:
     f.write(json_object)
 
+cmd = f'ls /tmp'
+print(f'=== {cmd} ===')
+print(os.system(cmd))
+
 cmd = f'cat {output_path}'
-print(f'=== {cmd}===')
-print(os.system(f'cat {output_path}'))
+print(f'=== {cmd} ===')
+print(os.system(cmd))
