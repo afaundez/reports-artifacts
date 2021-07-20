@@ -1,4 +1,8 @@
 import sys
 import json
+from pathlib import Path
 
-print(json.dumps(sys.argv, indent = 4))
+output_path = '/tmp/output.txt'
+Path(output_path).touch()
+output_paths = { 'output': output_path, 'args': sys.argv }
+print(json.dumps(output_paths, indent = 4))
