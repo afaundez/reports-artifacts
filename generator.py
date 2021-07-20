@@ -1,3 +1,4 @@
 import sys
+import json
 
-print(sys.argv)
+print(json.dumps(sys.argv, indent = 4))
