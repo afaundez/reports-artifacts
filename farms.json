@@ -1,0 +1,4 @@
+[
+    { "farm": "input/Vineyard/Caperana_cuarteles.geojson", "cuartel": "87", "year-from": "2019", "year-to": "2021" },
+    { "farm": "input/Vineyard/other-cuarteles.geogit:", "cuartel": "87", "year-from": "2019", "year-to": "2021" }
+]
