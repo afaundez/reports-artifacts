@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@page {
+    size: letter;
+    margin: 0;
+}
+
+html {
+    background-color: rgb(131, 131, 131);
+    width: 8.5in;
+    height: 11in;
+}
+
 body {
     background-color: white;
     color: black;
-    width: 100vw;
-    height: 129vw;
+    width: 8.5in;
+    height: 11in;
     margin: 0;
+    /* margin: .8em; */
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 figure {
@@ -25,20 +38,25 @@ figure {
     overflow: hidden;
     white-space: nowrap;
     text-align: center;
-    padding: .5rem
+    padding: .5em;
+    font-size: .7em;
+}
+
+.table .stripped-row {
+    border-bottom: .5px solid rgb(67,161, 199);
 }
 
 .header {
-    padding: 0 3em;
-    padding-top: 2em;
+    padding: 0 2.2em;
+    padding-top: 1.5em;
     display: flex;
     flex-flow: column-reverse nowrap;
     width: calc(100% - 6em);
 }
 
 .header .title {
-    padding: .3em .1em;
-    font-size: 4em;
+    /* padding: .2em .1em; */
+    font-size: 3em;
     text-transform: uppercase;
     margin: 0;
 }
@@ -47,7 +65,7 @@ figure {
     background-color: rgb(24, 144, 169);
     color: white;
     padding: .2em;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     width: fit-content;
 }
 
@@ -61,8 +79,8 @@ figure {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    width: calc(100% - 6em);
-    padding: 0 3em;
+    width: calc(100% - 4.4em);
+    padding: 0 2.2em;
     background: linear-gradient(to bottom, transparent 30%, rgb(24, 144, 169) 30% 70%, transparent 70%);
     justify-items: center;
 }
@@ -78,22 +96,23 @@ figure {
 
 .report-details .date .month {
     /* padding: .2em 0 .2em; */
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
 }
 
 .report-details .date .year {
     /* padding: .2em 0 .2em; */
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
 }
 
 
 .report-details .site {
     display: flex;
     flex-flow: row nowrap;
-    width: calc(75% - 1em);
+    width: 75%;
     background-color: white;
-    border: 2px solid rgb(67,161, 199);
+    border: 1.5px solid rgb(67,161, 199);
     padding: .5em;
+    height: 1.8in;
 }
 
 .report-details .site .details {
@@ -102,6 +121,7 @@ figure {
     grid-template-rows: repeat(6, 1fr);
     flex: 1;
     width: 100%;
+    font-size: .6em;
 }
 
 .report-details .site .details .detail {
@@ -122,12 +142,18 @@ figure {
 }
 
 .report-details .site .graphic {
-    flex: 1;
+    height: 100%;
+    width: 45%;
+}
+
+.report-details .site .graphic .plot {
+    height: 100%;
+    width: 100%;
 }
 
 .report-data {
-    width: calc(100% - 6em);
-    padding: 0 3em;
+    width: calc(100% - 4.4em);
+    padding: 0 2.2em;
 }
 
 .report-data .table .index, .report-data .table .value {
@@ -141,14 +167,10 @@ figure {
     width: calc(90% / 3);
 }
 
-.table .stripped-row {
-    border-bottom: 1px solid rgb(67,161, 199);
-}
-
 .report-graphics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(2, min-content);
     grid-template-areas: 'vigor uniformity' 'timeline timeline';
     grid-gap: 5%;
     width: calc(100% - 6em);
@@ -162,12 +184,18 @@ figure {
 
 .report-graphics .graphic .description {
     flex: 1;
+    font-size: .5em;
+}
+
+.report-graphics .graphic .description .content {
+    margin: 0;
 }
 
 .report-graphics .graphic.vigor {
     grid-area: vigor;
     border-top: 2px solid rgb(67,161, 199);
     border-right: 2px solid rgb(67,161, 199);
+    height: 3in;
     /* border-bottom: 2px solid rgb(67,161, 199); */
 }
 
@@ -182,13 +210,15 @@ figure {
 }
 
 .report-graphics .graphic.vigor .plot {
-    width: 100%;
+    width: 3.5in;
+    height: 2.2in;
 }
 
 .report-graphics .graphic.uniformity {
     grid-area: uniformity;
     border-top: 2px solid rgb(67,161, 199);
     border-left: 2px solid rgb(67,161, 199);
+    height: 3in;
     /* border-bottom: 2px solid rgb(67,161, 199); */
 }
 
@@ -207,15 +237,22 @@ figure {
     border-bottom: 2px solid rgb(67,161, 199);
 }
 
+.report-graphics .graphic.uniformity .plot {
+    width: 3.5in;
+    height: 2.2in;
+}
+
 .report-graphics .graphic.timeline {
     grid-area: timeline;
     grid-gap: 1em;
     display: flex;
     flex-flow: row-reverse nowrap;
+    height: 2in;
+    overflow: hidden;
 }
 
 .report-graphics .graphic.timeline .plot {
-    width: 65%;
+    width: 6in;
 }
 
 .report-graphics .graphic.timeline .description {
@@ -231,10 +268,12 @@ figure {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    width: calc(100% - 6em);
-    padding: 0 3em;
+    width: calc(100% - 4.4em);
+    padding: 0 2.2em;
     background: linear-gradient(to bottom, transparent 30%, black 30% 70%, transparent 70%);
     justify-items: center;
+    position: absolute;
+    bottom: 0;
 }
 
 .branding .logos {
@@ -246,15 +285,18 @@ figure {
 
 .branding .logos .logo.proyectae {
     width: 12em;
+    height: 6em;
 }
 
 .branding .logos .logo.csiro {
+    width: 6em;
     width: 6em;
 }
 
 .branding .disclaimer {
     padding: .5em;
     color: white;
+    font-size: .5em;
 }
 
 .branding .disclaimer .date {
