@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: white;
+    color: black;
+    width: 100vw;
+    height: 129vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+figure {
+    margin: 0;
+    padding: 0
+}
+
+.table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table .index, .table .value, .table .dimension {
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    padding: .5rem
+}
+
+.header {
+    padding: 0 3em;
+    padding-top: 2em;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    width: calc(100% - 6em);
+}
+
+.header .title {
+    padding: .3em .1em;
+    font-size: 4em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.header .subtitle {
+    background-color: rgb(24, 144, 169);
+    color: white;
+    padding: .2em;
+    font-size: 1.5em;
+    width: fit-content;
+}
+
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.report-details {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: calc(100% - 6em);
+    padding: 0 3em;
+    background: linear-gradient(to bottom, transparent 30%, rgb(24, 144, 169) 30% 70%, transparent 70%);
+    justify-items: center;
+}
+
+.report-details .date {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    color: white;
+    height: min-content;
+    width: 25%;
+}
+
+.report-details .date .month {
+    /* padding: .2em 0 .2em; */
+    font-size: 1.3em;
+}
+
+.report-details .date .year {
+    /* padding: .2em 0 .2em; */
+    font-size: 1.3em;
+}
+
+
+.report-details .site {
+    display: flex;
+    flex-flow: row nowrap;
+    width: calc(75% - 1em);
+    background-color: white;
+    border: 2px solid rgb(67,161, 199);
+    padding: .5em;
+}
+
+.report-details .site .details {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, 1fr);
+    flex: 1;
+    width: 100%;
+}
+
+.report-details .site .details .detail {
+    justify-self: right;
+    font-weight: bold;
+}
+
+.report-details .site .details .value {
+    margin: 0 1em;
+}
+
+.report-details .site .details .detail {
+    padding: .5em 0;
+}
+
+.report-details .site .details .value {
+    padding: .5em 0;
+}
+
+.report-details .site .graphic {
+    flex: 1;
+}
+
+.report-data {
+    width: calc(100% - 6em);
+    padding: 0 3em;
+}
+
+.report-data .table .index, .report-data .table .value {
+    width: calc(100% / 7);
+}
+
+.report-graphics .table {
+    width: calc(210% / 7 * 3);
+}
+.report-graphics .table .index, .report-graphics .table .value {
+    width: calc(90% / 3);
+}
+
+.table .stripped-row {
+    border-bottom: 1px solid rgb(67,161, 199);
+}
+
+.report-graphics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 'vigor uniformity' 'timeline timeline';
+    grid-gap: 5%;
+    width: calc(100% - 6em);
+    padding: 0 3em;
+}
+
+.report-graphics .graphic {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.report-graphics .graphic .description {
+    flex: 1;
+}
+
+.report-graphics .graphic.vigor {
+    grid-area: vigor;
+    border-top: 2px solid rgb(67,161, 199);
+    border-right: 2px solid rgb(67,161, 199);
+    /* border-bottom: 2px solid rgb(67,161, 199); */
+}
+
+.report-graphics .graphic.vigor:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-right: 0;
+    width: 50%;
+    padding-top: 20px;
+    border-bottom: 2px solid rgb(67,161, 199);
+}
+
+.report-graphics .graphic.vigor .plot {
+    width: 100%;
+}
+
+.report-graphics .graphic.uniformity {
+    grid-area: uniformity;
+    border-top: 2px solid rgb(67,161, 199);
+    border-left: 2px solid rgb(67,161, 199);
+    /* border-bottom: 2px solid rgb(67,161, 199); */
+}
+
+.report-graphics .graphic.uniformity .table {
+    align-self: flex-end;
+}
+
+.report-graphics .graphic.uniformity:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-left: 0;
+    bottom: 0;
+    width: 50%;
+    padding-top: 20px;
+    border-bottom: 2px solid rgb(67,161, 199);
+}
+
+.report-graphics .graphic.timeline {
+    grid-area: timeline;
+    grid-gap: 1em;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+.report-graphics .graphic.timeline .plot {
+    width: 65%;
+}
+
+.report-graphics .graphic.timeline .description {
+    width: 40%;
+    text-align: right;
+}
+
+.description .detail {
+    font-weight: bold;
+}
+
+.branding {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: calc(100% - 6em);
+    padding: 0 3em;
+    background: linear-gradient(to bottom, transparent 30%, black 30% 70%, transparent 70%);
+    justify-items: center;
+}
+
+.branding .logos {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 6em;
+    background-color: white;
+}
+
+.branding .logos .logo.proyectae {
+    width: 12em;
+}
+
+.branding .logos .logo.csiro {
+    width: 6em;
+}
+
+.branding .disclaimer {
+    padding: .5em;
+    color: white;
+}
+
+.branding .disclaimer .date {
+    font-weight: bold;
+}
