@@ -8,28 +8,28 @@ description:
   species: # Vid
   variety: # Vides tintas
 files:
-  site: # site.png
-  vigor: # vigor.png
-  uniformity: # uniformity.png
-  timeline: # timeline.png
+  site: plot.png # site.png
+  vigor: plot.png # vigor.png
+  uniformity: plot.png # uniformity.png
+  timeline: plot.png # timeline.png
 data:
   vigor:
     water:
-      - current: # 52
-      - previous: # 48
+      current: # 52
+      previous: # 48
     soil:
-      - current:
-      - previous:
+      current:
+      previous:
     vegetation:
-      - current:
-      - previous:
+      current:
+      previous:
   uniformity:
     water:
-      - current:
-      - previous:
+      current:
+      previous:
     soil:
-      - current:
-      - previous:
+      current:
+      previous:
     vegetation:
-      - current:
-      - previous:
+      current:
+      previous:
