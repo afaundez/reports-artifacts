@@ -1,4 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Black.otf') format('opentype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GothamMedium.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GothamRegular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-XLight.otf') format('opentype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Thin.otf') format('opentype');
+    font-weight: 100;
+}
 
 @page {
     size: letter;
@@ -19,7 +65,7 @@ body {
     margin: 0;
     /* margin: .8em; */
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gotham', sans-serif;
     position: relative;
 }
 
@@ -59,6 +105,7 @@ figure {
     font-size: 3em;
     text-transform: uppercase;
     margin: 0;
+    font-weight: 300;
 }
 
 .header .subtitle {
@@ -67,6 +114,7 @@ figure {
     padding: .2em;
     /* font-size: 1.5em; */
     width: fit-content;
+    font-weight: bold;
 }
 
 .content {
@@ -95,12 +143,12 @@ figure {
 }
 
 .report-details .date .month {
-    /* padding: .2em 0 .2em; */
+    padding: .2em 0 .5em;
     /* font-size: 1.3em; */
 }
 
 .report-details .date .year {
-    /* padding: .2em 0 .2em; */
+    padding: .5em 0 .2em;
     /* font-size: 1.3em; */
 }
 
@@ -113,6 +161,7 @@ figure {
     border: 1.5px solid rgb(67,161, 199);
     padding: .5em;
     height: 1.8in;
+    align-items: center;
 }
 
 .report-details .site .details {
@@ -121,7 +170,9 @@ figure {
     grid-template-rows: repeat(6, 1fr);
     flex: 1;
     width: 100%;
-    font-size: .6em;
+    font-size: .7em;
+    height: fit-content;
+    margin: 0;
 }
 
 .report-details .site .details .detail {
@@ -134,11 +185,11 @@ figure {
 }
 
 .report-details .site .details .detail {
-    padding: .5em 0;
+    padding: .25em 0 .25em;
 }
 
 .report-details .site .details .value {
-    padding: .5em 0;
+    padding: .25em 0 .25em;
 }
 
 .report-details .site .graphic {
@@ -284,19 +335,19 @@ figure {
 }
 
 .branding .logos .logo.proyectae {
-    width: 12em;
-    height: 6em;
+    padding-left: 1em;
+    width: 1in;
+    width: 1in;
 }
 
 .branding .logos .logo.csiro {
-    width: 6em;
-    width: 6em;
+    width: 1in;
+    width: 1in;
 }
 
 .branding .disclaimer {
     padding: .5em;
     color: white;
-    font-size: .5em;
 }
 
 .branding .disclaimer .date {
