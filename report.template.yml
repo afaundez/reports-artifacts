@@ -1,6 +1,7 @@
-description:
+report:
   month: # Junio
   year: #2021
+farm:
   location: # Rancwater, Región de O’Higgins
   coordinates: # 41°24'12.2"N 2°10'26.5"E
   id: # 86
@@ -8,10 +9,10 @@ description:
   species: # Vid
   variety: # Vides tintas
 files:
-  site: plot.png # site.png
-  vigor: plot.png # vigor.png
-  uniformity: plot.png # uniformity.png
-  timeline: plot.png # timeline.png
+  site: # site.png
+  vigor: # vigor.png
+  uniformity: # uniformity.png
+  timeline: # timeline.png
 data:
   vigor:
     water:

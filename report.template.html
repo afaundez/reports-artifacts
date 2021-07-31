@@ -11,23 +11,23 @@
     <main class='content'>
         <section class="report-details">
             <time class="date">
-                <span class="month">{{ description['month'] }}</span>
-                <span class="year">{{ description['year'] }}</span>
+                <span class="month">{{ report['month'] }}</span>
+                <span class="year">{{ report['year'] }}</span>
             </time>
             <div class="site">
                 <dl class="details">
                     <dt class="detail">Ubicaci&oacute;n:</dt>
-                    <dd class="value">{{ description['location'] }}</dd>
+                    <dd class="value">{{ farm['location'] }}</dd>
                     <dt class="detail">Coordenadas:</dt>
-                    <dd class="value">{{ description['coordinates'] }}</dd>
+                    <dd class="value">{{ farm['coordinates'] }}</dd>
                     <dt class="detail">ID:</dt>
-                    <dd class="value">{{ description['id'] }}</dd>
+                    <dd class="value">{{ farm['id'] }}</dd>
                     <dt class="detail">Tama&ntilde;o:</dt>
-                    <dd class="value">{{ description['size'] }}</dd>
+                    <dd class="value">{{ farm['size'] }}</dd>
                     <dt class="detail">Especie:</dt>
-                    <dd class="value">{{ description['species'] }}</dd>
+                    <dd class="value">{{ farm['species'] }}</dd>
                     <dt class="detail">Variedad:</dt>
-                    <dd class="value">{{ description['variety'] }}</dd>
+                    <dd class="value">{{ farm['variety'] }}</dd>
                 </dl>
                 <figure class="graphic">
                     <img class='plot' src="{{ files['site'] }}" alt="satellite image"/>
