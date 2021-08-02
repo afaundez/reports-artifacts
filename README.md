@@ -28,11 +28,11 @@ Default name: `report.ipynb`
 
 ## HTML report template
 
-The following files will be used using  the [Jinja2 CLI](https://github.com/kolypto/j2cli).
+The following files will be used using  the [Jinja2 CLI](https://github.com/mattrobenolt/jinja2-cli).
 
 ### Jinja2 template
 
-An [HTML template](https://github.com/kolypto/j2cli#tutorial) that uses the notebook's output as variables. Every asset needed by the template must be in the same folder as the template: in this example the folder `assets` containes the CSS file, fonts and images.
+An [HTML template](https://github.com/mattrobenolt/jinja2-cli#usage) that uses the notebook's output as variables. Every asset needed by the template must be in the same folder as the template: in this example the folder `assets` containes the CSS file, fonts and images.
 
 The CSS used must ensure that the HTML is printable in a paged PDF document.
 
