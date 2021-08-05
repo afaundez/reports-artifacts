@@ -59,11 +59,11 @@
                 <tbody class="body">
                     <tr class='row stripped-row values'>
                         <td class="index">Agua</td>
-                        <td class="value {% if int(vigor_data['water']['current']) > 90 %} red{% elif int(vigor_data['water']['current']) > 60 %} yellow{% elif int(vigor_data['water']['current']) > 0 %} red{% endif %}">{{ vigor_data['water']['current'] }}</td>
-                        <td class="value {% if int(vigor_data['water']['previous']) > 90 %} red{% elif int(vigor_data['water']['previous']) > 60 %} yellow{% elif int(vigor_data['water']['previous']) > 0 %} red{% endif %}">{{ vigor_data['water']['previous'] }}</td>
+                        <td class="value {% set value = vigor_data['water']['current'] | int %}{% if value > 90 %} red{% elif value > 60 %} yellow{% elif value > 0 %} red{% endif %}">{{ vigor_data['water']['current'] }}</td>
+                        <td class="value {% set value = vigor_data['water']['previous'] | int %}{% if value > 90 %} red{% elif value > 60 %} yellow{% elif value > 0 %} red{% endif %}">{{ vigor_data['water']['previous'] }}</td>
                         <td class="cell-gap"></td>
-                        <td class="value {% if int(uniformity_data['water']['current']) > 90 %} red{% elif int(uniformity_data['water']['current']) > 60 %} yellow{% elif int(uniformity_data['water']['current']) > 0 %} red{% endif %}">{{ uniformity_data['water']['current'] }}</td>
-                        <td class="value {% if int(uniformity_data['water']['previous']) > 90 %} red{% elif int(uniformity_data['water']['previous']) > 60 %} yellow{% elif int(uniformity_data['water']['previous']) > 0 %} red{% endif %}">{{ uniformity_data['water']['previous'] }}</td>
+                        <td class="value {% set value = uniformity_data['water']['current'] | int %}{% if value > 90 %} red{% elif value > 60 %} yellow{% elif value > 0 %} red{% endif %}">{{ uniformity_data['water']['current'] }}</td>
+                        <td class="value {% set value = uniformity_data['water']['previous'] | int %}{% if value > 90 %} red{% elif value > 60 %} yellow{% elif value > 0 %} red{% endif %}">{{ uniformity_data['water']['previous'] }}</td>
                         <td></td>
                     </tr>
                     <tr class='row values'>
