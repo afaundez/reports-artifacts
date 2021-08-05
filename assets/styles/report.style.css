@@ -184,6 +184,18 @@ figure {
     margin: 0 1em;
 }
 
+.report-details .site .details .value.red {
+    background-color: lightpink;
+}
+
+.report-details .site .details .value.yellow {
+    background-color: lightgoldenrodyellow;
+}
+
+.report-details .site .details .value.green {
+    background-color: lightseagreen;
+}
+
 .report-details .site .details .detail {
     padding: .25em 0 .25em;
 }
