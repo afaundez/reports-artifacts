@@ -214,28 +214,45 @@ figure {
     width: calc(100% / 7);
 }
 
-.report-data .table .value.red,
-.report-graphics .table .value.red {
+.report-data .table .value .red,
+.report-graphics .table .value .red {
     background-color: rgb(255, 163, 127);
-    font-size: bold;
+    font-weight: bold;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+
 }
 
-.report-data .table .value.yellow,
-.report-graphics .table .value.yellow {
+.report-data .table .value .yellow,
+.report-graphics .table .value .yellow {
     background-color: rgb(255, 211, 135);
-    font-size: bold;
+    font-weight: bold;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
 }
 
-.report-data .table .value.green,
-.report-graphics .table .value.green {
+.report-data .table .value .green,
+.report-graphics .table .value .green {
     background-color: rgb(170, 216, 134);
-    font-size: bold;
+    font-weight: bold;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
 }
 
-.report-data .table .value.unknown,
-.report-graphics .table .value.unknown {
+.report-data .table .value .unknown,
+.report-graphics .table .value .unknown {
     background-color: lightgray;
-    font-size: bold;
+    font-weight: bold;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
 }
 
 .report-graphics .table {
@@ -335,8 +352,7 @@ figure {
 }
 
 .report-graphics .graphic.timeline .plot {
-    max-width: 4.5in;
-    height: 97%;
+    width: 4.5in;
     align-self: start;
 }
 
