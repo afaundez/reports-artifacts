@@ -212,7 +212,7 @@ figure {
 }
 
 .report-graphics .table {
-    width: calc(210% / 7 * 3);
+    width: calc(212% / 7 * 3);
 }
 .report-graphics .table .index, .report-graphics .table .value {
     width: calc(90% / 3);
@@ -233,64 +233,69 @@ figure {
     flex-flow: column nowrap;
 }
 
+.report-graphics .graphic .plot {
+    align-self: center;
+    padding-top: .5em;
+}
+
 .report-graphics .graphic .description {
     flex: 1;
-    font-size: .5em;
+    font-size: .6em;
+    align-self: center;
+    padding-top: 1em;
+    width: 98%;
+    margin-left: 2em;
 }
 
 .report-graphics .graphic .description .content {
     margin: 0;
+    width: 80%;
 }
 
 .report-graphics .graphic.vigor {
     grid-area: vigor;
-    border-top: 2px solid rgb(67,161, 199);
     border-right: 2px solid rgb(67,161, 199);
-    height: 3in;
-    /* border-bottom: 2px solid rgb(67,161, 199); */
 }
 
-.report-graphics .graphic.vigor:after {
+.report-graphics .graphic.semi-boxed {
+    border-top: 2px solid rgb(67,161, 199);
+    height: calc(3.5in);
+}
+
+.report-graphics .graphic.semi-boxed:after {
     content: "";
     display: block;
     margin: 0 auto;
-    margin-right: 0;
     width: 50%;
-    padding-top: 20px;
+    padding-top: 1px;}
+
+.report-graphics .graphic.semi-boxed.vigor:after {
+    margin-right: 0;
     border-bottom: 2px solid rgb(67,161, 199);
 }
 
 .report-graphics .graphic.vigor .plot {
-    width: 3.5in;
-    height: 2.2in;
+    width: 98%;
+    height: 2.45in;
 }
 
 .report-graphics .graphic.uniformity {
     grid-area: uniformity;
-    border-top: 2px solid rgb(67,161, 199);
     border-left: 2px solid rgb(67,161, 199);
-    height: 3in;
-    /* border-bottom: 2px solid rgb(67,161, 199); */
 }
 
 .report-graphics .graphic.uniformity .table {
     align-self: flex-end;
 }
 
-.report-graphics .graphic.uniformity:after {
-    content: "";
-    display: block;
-    margin: 0 auto;
+.report-graphics .graphic.semi-boxed.uniformity:after {
     margin-left: 0;
-    bottom: 0;
-    width: 50%;
-    padding-top: 20px;
     border-bottom: 2px solid rgb(67,161, 199);
 }
 
 .report-graphics .graphic.uniformity .plot {
-    width: 3.5in;
-    height: 2.2in;
+    width: 98%;
+    height: 2.45in;
 }
 
 .report-graphics .graphic.timeline {
@@ -303,12 +308,20 @@ figure {
 }
 
 .report-graphics .graphic.timeline .plot {
-    width: 6in;
+    max-width: 4.5in;
+    height: 97%;
+    align-self: start;
 }
 
 .report-graphics .graphic.timeline .description {
     width: 40%;
     text-align: right;
+    align-self: start;
+    font-size: .7em;
+}
+
+.report-graphics .graphic.timeline .description .content {
+    width: 100%;
 }
 
 .description .detail {
