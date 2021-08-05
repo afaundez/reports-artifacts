@@ -89,7 +89,7 @@ figure {
 }
 
 .header .subtitle {
-    background-color: rgb(74,159, 181);
+    background-color: rgb(16, 161,184);
     color: white;
     padding: .2em;
     /* font-size: 1.5em; */
@@ -109,7 +109,7 @@ figure {
     align-items: center;
     width: calc(100% - 4.4em);
     padding: 0 2.2em;
-    background: linear-gradient(to bottom, transparent 30%, rgb(74,159, 181) 30% 70%, transparent 70%);
+    background: linear-gradient(to bottom, transparent 30%, rgb(16, 161,184) 30% 70%, transparent 70%);
     justify-items: center;
 }
 
