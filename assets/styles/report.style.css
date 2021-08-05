@@ -187,18 +187,6 @@ figure {
     margin: 0 1em;
 }
 
-.report-details .site .details .value.red {
-    background-color: lightpink;
-}
-
-.report-details .site .details .value.yellow {
-    background-color: lightgoldenrodyellow;
-}
-
-.report-details .site .details .value.green {
-    background-color: lightseagreen;
-}
-
 .report-details .site .details .detail {
     padding: .25em 0 .25em;
 }
@@ -224,6 +212,30 @@ figure {
 
 .report-data .table .index, .report-data .table .value {
     width: calc(100% / 7);
+}
+
+.report-data .table .index, .report-data .table .value.red,
+.report-graphics .table .index, .report-graphics .table .value.red {
+    background-color: lightpink;
+    font-size: bold;
+}
+
+.report-data .table .index, .report-data .table .value.yellow,
+.report-graphics .table .index, .report-graphics .table .value.yellow {
+    background-color: lightgoldenrodyellow;
+    font-size: bold;
+}
+
+.report-data .table .index, .report-data .table .value.green,
+.report-graphics .table .index, .report-graphics .table .value.green {
+    background-color: lightseagreen;
+    font-size: bold;
+}
+
+.report-data .table .index, .report-data .table .value.unknown,
+.report-graphics .table .index, .report-graphics .table .value.unknown {
+    background-color: lightgray;
+    font-size: bold;
 }
 
 .report-graphics .table {
