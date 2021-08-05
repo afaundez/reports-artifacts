@@ -18,14 +18,8 @@
 
 @font-face {
     font-family: 'Gotham';
-    src: url('../fonts/GothamRegular.otf') format('opentype');
+    src: url('../fonts/GothamBook.otf') format('opentype');
     font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/Gotham-Light.otf') format('opentype');
-    font-weight: 300;
 }
 
 @font-face {
@@ -66,6 +60,7 @@ body {
     /* margin: .8em; */
     padding: 0;
     font-family: 'Gotham', sans-serif;
+    font-weight: 400;
     position: relative;
     background-image: url(../images/background.report.png);
     background-repeat: no-repeat;
@@ -75,28 +70,6 @@ body {
 figure {
     margin: 0;
     padding: 0
-}
-
-.table {
-    border-collapse: collapse;
-    table-layout: fixed;
-    width: 100%;
-}
-.table .index, .table .value, .table .dimension {
-    overflow: hidden;
-    white-space: nowrap;
-    text-align: center;
-    padding: .5em;
-    font-size: .7em;
-}
-
-.table .index {
-    text-align: right;
-    padding-right: 2em;
-}
-
-.table .stripped-row {
-    border-bottom: .5px solid rgb(67,161, 199);
 }
 
 .header {
@@ -121,7 +94,7 @@ figure {
     padding: .2em;
     /* font-size: 1.5em; */
     width: fit-content;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .content {
@@ -147,18 +120,10 @@ figure {
     color: white;
     height: min-content;
     width: 25%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
 }
-
-.report-details .date .month {
-    padding: .2em 0 .5em;
-    /* font-size: 1.3em; */
-}
-
-.report-details .date .year {
-    padding: .5em 0 .2em;
-    /* font-size: 1.3em; */
-}
-
 
 .report-details .site {
     display: flex;
@@ -184,7 +149,7 @@ figure {
 
 .report-details .site .details .detail {
     justify-self: right;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .report-details .site .details .value {
@@ -214,14 +179,47 @@ figure {
     padding: 0 2.2em;
 }
 
-.report-data .table .index, .report-data .table .value {
-    width: calc(100% / 7);
+.table {
+    border-collapse: collapse;
 }
 
-.report-data .table .value .red,
-.report-graphics .table .value .red {
+.table .stripped-row {
+    border-bottom: .5px solid rgb(67,161, 199);
+}
+
+.table .index,
+.table .value,
+.table .dimension,
+.table .cell-gap {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: .5em 0;
+    font-size: .7em;
+    width: 1in;
+    font-weight: 400;
+}
+
+.table .cell-gap {
+    width: 1.8in;
+}
+
+.table .value {
+    text-align: center;
+}
+
+.table .index {
+    text-align: right;
+}
+
+.table .dimension.index,
+.table .dimension.title {
+    font-weight: 700;   
+}
+
+
+.table .value .red {
     background-color: rgb(255, 163, 127);
-    font-weight: bold;
+    font-weight: 700;
     width: 90%;
     padding: 0;
     text-align: center;
@@ -229,42 +227,33 @@ figure {
 
 }
 
-.report-data .table .value .yellow,
-.report-graphics .table .value .yellow {
+.table .value .yellow {
     background-color: rgb(255, 211, 135);
-    font-weight: bold;
+    font-weight: 700;
     width: 90%;
     padding: 0;
     text-align: center;
     display: inline-block;
 }
 
-.report-data .table .value .green,
-.report-graphics .table .value .green {
+.table .value .green{
     background-color: rgb(170, 216, 134);
-    font-weight: bold;
+    font-weight: 700;
     width: 90%;
     padding: 0;
     text-align: center;
     display: inline-block;
 }
 
-.report-data .table .value .unknown,
-.report-graphics .table .value .unknown {
+.table .value .unknown{
     background-color: lightgray;
-    font-weight: bold;
+    font-weight: 700;
     width: 90%;
     padding: 0;
     text-align: center;
     display: inline-block;
 }
 
-.report-graphics .table {
-    width: calc(212% / 7 * 3);
-}
-.report-graphics .table .value {
-    width: calc(90% / 3);
-}
 
 .report-graphics {
     display: grid;
@@ -327,6 +316,11 @@ figure {
     height: 2.45in;
 }
 
+
+.report-graphics .graphic.vigor .table {
+    align-self: flex-start;
+}
+
 .report-graphics .graphic.uniformity {
     grid-area: uniformity;
     border-left: 2px solid rgb(67,161, 199);
@@ -378,7 +372,7 @@ figure {
 }
 
 .description .detail {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .branding {
@@ -417,5 +411,5 @@ figure {
 }
 
 .branding .disclaimer .date {
-    font-weight: bold;
+    font-weight: 700;
 }
