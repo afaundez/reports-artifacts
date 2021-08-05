@@ -59,20 +59,20 @@
                 <tbody class="body">
                     <tr class='row stripped-row values'>
                         <td class="value index">Agua</td>
-                        <td class='value'><span class="{% set value = vigor_data['water']['current'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value > 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
-                        <td class='value'><span class="{% set value = vigor_data['water']['previous'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value > 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
+                        <td class='value'><span class="{% set value = vigor_data['water']['current'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value >= 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
+                        <td class='value'><span class="{% set value = vigor_data['water']['previous'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value >= 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
                         <td class="value cell-gap"></td>
-                        <td class='value value'><span class="{% set value = uniformity_data['water']['current'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value > 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
-                        <td class='value value'><span class="{% set value = uniformity_data['water']['previous'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value > 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
+                        <td class='value value'><span class="{% set value = uniformity_data['water']['current'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value >= 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
+                        <td class='value value'><span class="{% set value = uniformity_data['water']['previous'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value >= 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
                         <td></td>
                     </tr>
                     <tr class='row values'>
                         <td class="value index">Suelo</td>
-                        <td class='value'><span class="{% set value = vigor_data['soil']['current'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value > 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
-                        <td class='value'><span class="{% set value = vigor_data['soil']['previous'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value > 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
+                        <td class='value'><span class="{% set value = vigor_data['soil']['current'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value >= 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
+                        <td class='value'><span class="{% set value = vigor_data['soil']['previous'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value >= 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
                         <td class="value cell-gap"></td>
-                        <td class='value'><span class="{% set value = uniformity_data['soil']['current'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value > 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
-                        <td class='value'><span class="{% set value = uniformity_data['soil']['previous'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value > 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
+                        <td class='value'><span class="{% set value = uniformity_data['soil']['current'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value >= 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
+                        <td class='value'><span class="{% set value = uniformity_data['soil']['previous'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value >= 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
                         <td></td>
                     </tr>
                 </tbody>
@@ -84,8 +84,8 @@
                     <tbody class="body">
                         <tr class='row values'>
                             <td class="value index">Vegetaci&oacute;n</td>
-                            <td class='value'><span class="{% set value = vigor_data['vegetation']['current'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value > 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
-                            <td class='value'><span class="{% set value = vigor_data['vegetation']['previous'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value > 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
+                            <td class='value'><span class="{% set value = vigor_data['vegetation']['current'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value >= 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
+                            <td class='value'><span class="{% set value = vigor_data['vegetation']['previous'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value >= 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -100,8 +100,8 @@
                 <table class="table figure-table">
                     <tbody class="body">
                         <tr class='row values'>
-                            <td class='value'><span class="{% set value = uniformity_data['vegetation']['current'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value > 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
-                            <td class='value'><span class="{% set value = uniformity_data['vegetation']['previous'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value > 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
+                            <td class='value'><span class="{% set value = uniformity_data['vegetation']['current'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value >= 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
+                            <td class='value'><span class="{% set value = uniformity_data['vegetation']['previous'] | int %}{% if value > 90 %} green{% elif value > 60 %} yellow{% elif value >= 0 %} red{% else %} unknown{% endif %}">{{ value }}</span></td>
                             <td class="value index"></td>
                         </tr>
                     </tbody>
