@@ -67,6 +67,9 @@ body {
     padding: 0;
     font-family: 'Gotham', sans-serif;
     position: relative;
+    background-image: url(../images/background.report.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 figure {
