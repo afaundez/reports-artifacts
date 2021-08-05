@@ -82,13 +82,17 @@ figure {
     table-layout: fixed;
     width: 100%;
 }
-
 .table .index, .table .value, .table .dimension {
     overflow: hidden;
     white-space: nowrap;
     text-align: center;
     padding: .5em;
     font-size: .7em;
+}
+
+.table .index {
+    text-align: right;
+    padding-right: 2em;
 }
 
 .table .stripped-row {
@@ -288,7 +292,7 @@ figure {
     align-self: center;
     padding-top: 1em;
     width: 98%;
-    margin-left: 2em;
+    margin-left: 20%
 }
 
 .report-graphics .graphic .description .content {
@@ -365,6 +369,8 @@ figure {
     text-align: right;
     align-self: start;
     font-size: .7em;
+    padding-top: 0;
+    margin-left: 0;
 }
 
 .report-graphics .graphic.timeline .description .content {
