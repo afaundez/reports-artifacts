@@ -216,19 +216,19 @@ figure {
 
 .report-data .table .value.red,
 .report-graphics .table .value.red {
-    background-color: lightpink;
+    background-color: rgb(255, 163, 127);
     font-size: bold;
 }
 
 .report-data .table .value.yellow,
 .report-graphics .table .value.yellow {
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(255, 211, 135);
     font-size: bold;
 }
 
 .report-data .table .value.green,
 .report-graphics .table .value.green {
-    background-color: lightseagreen;
+    background-color: rgb(170, 216, 134);
     font-size: bold;
 }
 
