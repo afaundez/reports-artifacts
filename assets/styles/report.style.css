@@ -214,26 +214,26 @@ figure {
     width: calc(100% / 7);
 }
 
-.report-data .table .index, .report-data .table .value.red,
-.report-graphics .table .index, .report-graphics .table .value.red {
+.report-data .table .value.red,
+.report-graphics .table .value.red {
     background-color: lightpink;
     font-size: bold;
 }
 
-.report-data .table .index, .report-data .table .value.yellow,
-.report-graphics .table .index, .report-graphics .table .value.yellow {
+.report-data .table .value.yellow,
+.report-graphics .table .value.yellow {
     background-color: lightgoldenrodyellow;
     font-size: bold;
 }
 
-.report-data .table .index, .report-data .table .value.green,
-.report-graphics .table .index, .report-graphics .table .value.green {
+.report-data .table .value.green,
+.report-graphics .table .value.green {
     background-color: lightseagreen;
     font-size: bold;
 }
 
-.report-data .table .index, .report-data .table .value.unknown,
-.report-graphics .table .index, .report-graphics .table .value.unknown {
+.report-data .table .value.unknown,
+.report-graphics .table .value.unknown {
     background-color: lightgray;
     font-size: bold;
 }
@@ -241,7 +241,7 @@ figure {
 .report-graphics .table {
     width: calc(212% / 7 * 3);
 }
-.report-graphics .table .index, .report-graphics .table .value {
+.report-graphics .table .value {
     width: calc(90% / 3);
 }
 
