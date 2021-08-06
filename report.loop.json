@@ -1,5 +1,5 @@
 [
-    { "name": "Caperana", "farm": "./input/Vineyard/Caperana_cuarteles.shp", "cuartels": "87", "year-from": "2017", "year-to": "2021" },
+    { "name": "Caperana", "farm": "./input/Vineyard/Caperana_cuarteles.shp", "cuartel": "87", "year-from": "2017", "year-to": "2021" },
     { "name": "Caperana", "farm": "./input/Vineyard/Caperana_cuarteles.shp", "cuartel": "55", "year-from": "2017", "year-to": "2021" },
     { "name": "Caperana", "farm": "./input/Vineyard/Caperana_cuarteles.shp", "cuartel": "56", "year-from": "2017", "year-to": "2021" },
     { "name": "Caperana", "farm": "./input/Vineyard/Caperana_cuarteles.shp", "cuartel": "90a", "year-from": "2017", "year-to": "2021" },
